@@ -2,3 +2,11 @@ language: node_js
 node_js: node
 services:
 - mongodb
+deploy:
+  provider: heroku
+  api_key:
+    secure: rcSOJdgSqWCyh9cJCr48LTD9F8hvHDtgnTBKY50Gc9Qe1U52jjGKpY2g+zq2fIG8trP3AyII53QzaX+HPIox68+h6HeukFOmlliCyDOuLRzhyrKdQUssnvnOk7nVMfMXGW3rWeoYanbe2HIsfmjodbvSWSulNK4bV1/qGUhDlCaUQ+xea04fyQKmT3o1Zc2qh7khULhB6XvZJbLfKdVApypuV4W1O75lipN5ZjzdRsrSvgP/hGN+d/hBFCafNddkkOm02l+0VLdBY21TJ7pFgwnmcHBRV9vDZhY4oKrvNs1ALj1kZt/31TlzP0iyBJKYFWMrrlETc9rOAl1HVe+jvrpEwlsE0v8e2RoFqgluOyjwdg+QAdcaoa/uXymlIJTe/2QRlW18anlb0C6K179XDv8vRE63WOsfoqYJGu8uTqmaogYrK5pTTFjSCMrh5dlzmnIk7BYRsdlfYNqWTDLzY7M2qaJFiwztFAmvPrZ6KNr2SCg57f8rCn4E7enc9zAdfhDhgvxtg2bBKo3/USBMfi/ggek7xO15wvCsr2pI6j2tqEZi611uW2oyJRkSe1MUUWlQCWOLT+TSzhptMjhwI7DFzmmB2wqowrSU3J8357YCGKq120DBpDn0dXZhsOhkjRU/2ZDLy23Ie0OYlfclLyoNYlXI/u5yqh+eVzR0U7E=
+  app: james-node-restaurants-app-mongoose
+  on: secret-lake-99618
+    repo: Thinkful-Ed/node-restaurants-app-mongoose
+    branch: feature/with-tests
